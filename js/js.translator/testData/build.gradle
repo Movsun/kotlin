@@ -1,0 +1,15 @@
+plugins {
+    id "com.moowork.node" version "1.2.0"
+}
+
+apply plugin: 'base'
+
+description = 'Run compiler tests on NodeJs'
+
+node {
+    download = true
+}
+
+task runMocha(type: NpmTask, dependsOn: npm_install) {
+  args=['run', 'test']
+}
