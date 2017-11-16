@@ -13,14 +13,14 @@ interface KInterface : Test {
 }
 
 class KClass : Test {
-    @kotlin.Suppress("DEFAULT_METHOD_CALL_FROM_JAVA6_TARGET")
+    @kotlin.Suppress("DEFAULT_METHOD_CALL_FROM_JAVA6_TARGET_ERROR")
     fun ktest(): String {
         return super.test() + test()
     }
 }
 
 class KTClass : KInterface {
-    @kotlin.Suppress("DEFAULT_METHOD_CALL_FROM_JAVA6_TARGET")
+    @kotlin.Suppress("DEFAULT_METHOD_CALL_FROM_JAVA6_TARGET_ERROR")
     fun ktest(): String {
         return super.test() + test()
     }
@@ -29,7 +29,7 @@ class KTClass : KInterface {
 
 fun box(): String {
     val p = object : KInterface {
-        @kotlin.Suppress("DEFAULT_METHOD_CALL_FROM_JAVA6_TARGET")
+        @kotlin.Suppress("DEFAULT_METHOD_CALL_FROM_JAVA6_TARGET_ERROR")
         fun ktest(): String {
             return super.test() + test()
         }

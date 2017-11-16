@@ -75,6 +75,7 @@ enum class LanguageFeature(
     ProhibitInnerClassesOfGenericClassExtendingThrowable(KOTLIN_1_3),
 
     StrictJavaNullabilityAssertions(sinceVersion = null, defaultState = State.DISABLED),
+    DefaultMethodsCallFromJava6TargetError(KOTLIN_1_2),
 
     // Experimental features
 

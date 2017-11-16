@@ -11,7 +11,7 @@ public interface Simple {
 }
 
 // FILE: main.kt
-
+// LANGUAGE_VERSION: 1.1
 interface KInterface : Simple {
     fun bar(): String {
         return test("O") + Simple.testStatic("O")

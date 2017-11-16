@@ -11,7 +11,7 @@ interface Simple {
 }
 
 // FILE: main.kt
-
+// LANGUAGE_VERSION: 1.1
 class Test : Simple {}
 
 fun box(): String {
